@@ -1,0 +1,9 @@
+.container {
+    width: 80%;
+}
+
+.form-control {
+    width: 40%;
+    display: inline;
+    margin-top: 2%;
+}

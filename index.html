@@ -1,0 +1,29 @@
+<html>
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/angular-1.6.6.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <link href="css/bootstrap-3.3.7.min.css" rel="stylesheet">
+        <link href="css/style.css"  rel="stylesheet">
+<body>
+
+<div ng-app="" class="container">
+ 
+<h3>输入各段窗户宽度，及总用料宽度，会自动得出相应的各个用料宽度</h3>
+
+<input type="text" placeholder="窗户宽度01" class="form-control" ng-model="imgWidth01">
+<input type="text" placeholder="{{texWidthTotal * imgWidth01 / imgWidthTotal | number:2}}" class="form-control" readonly="true" ng-model="texWidth01">
+
+<input type="text" placeholder="窗户宽度02" class="form-control" ng-model="imgWidth02">
+<input type="text" placeholder="{{texWidthTotal * imgWidth02 / imgWidthTotal | number:2}}" class="form-control" readonly="true" ng-model="texWidth02">
+
+<input type="text" placeholder="窗户宽度03" class="form-control" ng-model="imgWidth03">
+<input type="text" placeholder="{{texWidthTotal * imgWidth03 / imgWidthTotal | number:2}}" class="form-control" readonly="true" ng-model="texWidth03">
+
+<input type="text" placeholder="窗户总宽度" class="form-control" ng-model="imgWidthTotal">
+<input type="text" placeholder="用料总宽度" class="form-control" ng-model="texWidthTotal">
+
+
+</div>
+
+</body>
+</html>
